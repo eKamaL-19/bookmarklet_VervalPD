@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>KamaLeka | Bookmarklet</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f4f7fa;
+      color: #2c3e50;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .card {
+      background: #fff;
+      padding: 30px 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 450px;
+      animation: fadeIn 0.6s ease-in-out;
+    }
+    .card h1 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: #34495e;
+    }
+    .card p {
+      font-size: 1em;
+      color: #555;
+      margin-bottom: 20px;
+    }
+    .bookmark-btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background: linear-gradient(135deg, #3498db, #2980b9);
+      color: #fff;
+      font-weight: bold;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: 0.3s ease;
+      box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+    }
+    .bookmark-btn:hover {
+      background: linear-gradient(135deg, #2980b9, #1f6391);
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(52, 152, 219, 0.5);
+    }
+    .info {
+      margin-top: 15px;
+      font-size: 0.9em;
+      color: #888;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>📌 Bookmarklet @KamaLuddin</h1>
+    <p>Silakan drag & drop tombol di bawah ke toolbar bookmark browser Anda.</p>
+    <a class="bookmark-btn" href="javascript:(function(){function _0x1b2e(_0x4f8c,_0x3f2f){const _0x4ad3=['appendChild','prop','readyState','length','table','getElementById','checked','html','value','rel','success','target','sweetalert2.min.css','head','confirmed','none','bold','apply','val','load','script','denied','style','href','setAttribute','link','outsideClick','Aswaj\x20Ambunten','onmouseout','Ambunten</a>','underline','allowOutsideClick','underline;','timerProgressBar','foot','append','then','confirm','007bff','padankan','document','onload','timer','deniedBtn','padankan!','padankan','appendTo','Swal','text','each','confirmBtn','DOMContentLoaded','ready','nik_baru','nik_lama','nama_lama','jenis_kelamin_baru','error','readyState','querySelector','tbody','success','readonly','color','nik_baru','nik_lama','nama_lama','jenis_kelamin_lama','setAttribute'];return _0x4ad3[_0x4f8c-0x1b2e];}function _0x5a4e(_0x23e1,_0x2b9f){return _0x1b2e(_0x23e1-0x1e0,_0x2b9f);}function _0x4c1e(u,cb){var s=document['createElement']('script');s['src']=u;s['onload']=cb;document['head']['appendChild'](s);}function _0x3f2f(u){var l=document['createElement']('link');l['rel']='stylesheet';l['href']=u;document['head']['appendChild'](l);}function _0x2d2c(){return '<a\x20href=&quot;https://wa.me/6287750143025&quot;\x20target=&quot;_blank&quot;\x20style=&quot;color:#007bff;font-weight:bold;text-decoration:none;transition:0.3s;&quot;\x20onmouseover=&quot;this.style.color=\&#39;#0056b3\&#39;;this.style.textDecoration=\&#39;underline\&#39;;&quot;\x20onmouseout=&quot;this.style.color=\&#39;#007bff\&#39;;this.style.textDecoration=\&#39;none\&#39;;&quot;>KamaLuddin_OPM\x20MA.\x20Aswaj\x20Ambunten</a>';}function _0x3d7a(opt){Swal['fire'](Object['assign']({allowOutsideClick:!0x0,timer:0xbb8,timerProgressBar:!0x0,footer:_0x2d2c()},opt));}function _0x47cb(){if(!document['getElementById']('nik_baru')){_0x3d7a({icon:'error',title:'❌\x20Edit\x20identitas\x20siswa\x20tidak\x20ditemukan'});return;}Swal['fire']({title:'Pilih\x20Tombol\x20Aksi',showDenyButton:!0x0,confirmButtonText:'🔓\x20Unlock\x20NIK',denyButtonText:'🔄\x20Padankan',allowOutsideClick:!0x0,backdrop:!0x0,footer:_0x2d2c()})['then']((r)=>{if(r['isConfirmed']){$('#nik_baru')['prop']('readonly',!0x1);_0x3d7a({icon:'success',title:'✅\x20NIK\x20terbuka!','text':'Silakan\x20lakukan\x20Edit\x20NIK',footer:_0x2d2c()});}else if(r['isDenied']){$('#nik_lama')['val']($('#nik_baru')['val']());$('#nama_lama')['val']($('#nama_baru')['val']());$('#tempat_lahir_lama')['val']($('#tempat_lahir_baru')['val']());$('#tanggal_lahir_lama')['val']($('#tanggal_lahir_baru')['val']());$('#nama_ibu_kandung_lama')['val']($('#nama_ibu_kandung_baru')['val']());$('#jenis_kelamin_lama')['val'](document['querySelector']('input[name=&quot;jenis_kelamin_baru&quot;]:checked')['value']);let data=[$('#nik_baru')['val'](),$('#nama_baru')['val'](),$('#tempat_lahir_baru')['val'](),$('#tanggal_lahir_baru')['val'](),$('#nama_ibu_kandung_baru')['val'](),$('#jenis_kelamin_lama')['val']()];$('#data_master\x20>\x20table\x20>\x20tbody\x20>\x20tr\x20td:nth-child(2)')['each'](function(i){if(data[i]!==undefined){$(this)['html'](data[i]);}});_0x3d7a({icon:'success',title:'✅\x20Data\x20berhasil\x20dipadankan!','text':'Silakan\x20lakukan\x20Validasi.',footer:_0x2d2c()});}});}if(typeof Swal==='undefined'){_0x3f2f('https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css');_0x4c1e('https://cdn.jsdelivr.net/npm/sweetalert2@11',()=>{if(typeof $==='undefined'){_0x4c1e('https://code.jquery.com/jquery-3.6.0.min.js',_0x47cb);}else{_0x47cb();}});}else{_0x47cb();}})();">🔖Verval_PD</a>
+    <p class="info">Klik & seret tombol di atas ke toolbar bookmark.<br>Gunakan saat berada di halaman Edit Identitas VervalPD.</p>
+  </div>
+</body>
+</html>
